@@ -1,0 +1,81 @@
+{
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "Build Release",
+            "command": "make",
+            "args": ["--no-builtin-rules", "--no-builtin-variables"],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "Build Debug",
+            "command": "make",
+            "args": ["DEBUG=yes", "--no-builtin-rules", "--no-builtin-variables"],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "Clean Release",
+            "command": "make",
+            "args": ["--no-builtin-rules", "--no-builtin-variables", "clean"],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "Clean Debug",
+            "command": "make",
+            "args": ["DEBUG=yes", "--no-builtin-rules", "--no-builtin-variables", "clean"],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "Remove Release",
+            "command": "make",
+            "args": ["--no-builtin-rules", "--no-builtin-variables", "remove"],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "Remove Debug",
+            "command": "make",
+            "args": ["DEBUG=yes", "--no-builtin-rules", "--no-builtin-variables", "remove"],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build"
+        },
+        {
+            "type": "shell",
+            "label": "Format code",
+            "command": "make",
+            "args": ["--no-builtin-rules", "--no-builtin-variables", "format"],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "group": "build"
+        }
+    ],
+    "version": "2.0.0"
+}

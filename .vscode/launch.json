@@ -1,0 +1,18 @@
+{
+    "configurations": [
+        {
+            "name": "Launch App",
+            "type": "cppdbg",
+            "request": "launch",
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}/bin/debug",
+            "environment": [],
+            "program": "${workspaceFolder}/bin/debug/app",
+            "args": [],
+            "MIMode": "lldb",
+            "externalConsole": false,
+            "targetArchitecture": "x86_64",
+            "preLaunchTask": "Build Debug"
+        }
+    ]
+}
